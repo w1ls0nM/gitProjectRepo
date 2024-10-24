@@ -1,0 +1,144 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #2980b9, #2ecc71);
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #2980b9;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header styles */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: #fff;
+    font-size: 1rem;
+}
+
+/* Contact Form Section */
+.contact-form {
+    padding: 2rem;
+    max-width: 600px;
+    margin: 2rem auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #2980b9;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #1a598a;
+}
+
+/* Contact Info Section */
+.contact-info {
+    padding: 2rem;
+    max-width: 600px;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.contact-info h2 {
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+/* Popup styles */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center it */
+    background-color: #28a745; /* Success color */
+    color: white;
+    padding: 1rem 2rem; /* Increased padding for better appearance */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transition for smooth appearance */
+    opacity: 0; /* Start as invisible */
+    visibility: hidden; /* Hidden by default */
+}
+
+.popup.show {
+    opacity: 1; /* Fade in */
+    visibility: visible; /* Make visible */
+    transform: translate(-50%, -50%) scale(1.05); /* Slightly increase size on show */
+}
+
+.hidden {
+    display: none; /* Completely remove from flow */
+}
+
+/* Footer styles */
+.main-footer {
+    text-align: center;
+    padding: 2.5rem;
+    background-color: #333;
+    color: #fff;
+}

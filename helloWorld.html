@@ -1,11 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Git Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Git Project</title>
 </head>
 <body>
+    <header class="main-header">
+        <div class="logo">Git Commands Reference</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="commands.html">Commands</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<h1>Git class</h1>
+    <main class="content" id="home">
+        <section class="hero">
+            <h1>Welcome to the Git Project</h1>
+            <p>Learn the main Git commands for version control and project management.</p>
+        </section>
 
+        <section class="info">
+            <h2>What is Git?</h2>
+            <p>Git is a distributed version control system designed to handle everything from small to very large projects with speed and efficiency. It allows multiple developers to work on a project simultaneously without interfering with each other.</p>
+        </section>
+
+        <section class="features">
+            <h2>Key Features of Git</h2>
+            <ul>
+                <strong>Branching and Merging:</strong> Easily create, manage, and merge branches to develop features or fix bugs.
+                <strong>Distributed Development:</strong> Work offline and synchronize changes later, making collaboration easier.
+                <strong>Efficient Performance:</strong> Handles large projects efficiently, with fast performance for commits and branches.
+                <strong>History and Audit:</strong> Keep a detailed history of changes, allowing you to revert to previous versions if necessary.
+                <strong>Collaboration:</strong> Supports multiple workflows for teams, including centralized and decentralized approaches.
+            </ul>
+        </section>
+
+        <section class="getting-started">
+            <h2>Getting Started with Git</h2>
+            <p>To begin using Git, follow these simple steps:</p>
+            <ol>
+                Install Git on your computer.
+                Set up your user name and email address using the commands:
+                <pre><code>git config --global user.name "Your Name"
+git config --global user.email "youremail@example.com"</code></pre>
+                Initialize a new repository in your project folder:
+                <pre><code>git init</code></pre>
+                Start making commits to track your changes!
+            </ol>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2024 Git Commands Reference | <a href="/contact.html">Wilson Miranda</a></p>
+    </footer>
 </body>
 </html>

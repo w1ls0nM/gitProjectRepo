@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="command.css">
+    <title>Key Git Commands</title>
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">Git Commands Reference</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="helloWorld.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+        <section class="commands" id="commands">
+            <h2>Key Git Commands</h2>
+            <pre><code>
+# 1. Configure Git
+git config --global user.name "Your Name"
+git config --global user.email "youremail@example.com"
+
+# 2. Initialize a Repository
+git init
+
+# 3. Clone a Repository
+git clone https://github.com/user/repository.git
+
+# 4. Check Repository Status
+git status
+
+# 5. Add Files to Staging
+git add file.txt
+git add .
+
+# 6. Commit Changes
+git commit -m "Message describing the change"
+
+# 7. View Commit History
+git log
+
+# 8. Push Changes to a Remote Repository
+git push origin main
+
+# 9. Pull Changes from a Remote Repository
+git pull origin main
+
+# 10. Create and Switch Branches
+git branch new-branch
+git checkout new-branch
+git checkout -b new-branch
+
+# 11. Merge Branches
+git checkout main
+git merge new-branch
+
+# 12. List Branches
+git branch
+
+# 13. Delete a Branch
+git branch -d branch-name
+
+# 14. Revert a Commit
+git revert <commit-id>
+            </code></pre>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2024 Git Commands Reference | <a href="/contact.html">Contact Us</a></p>
+    </footer>
+</body>
+</html>
